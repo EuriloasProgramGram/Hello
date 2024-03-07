@@ -35,7 +35,13 @@
     const full = document.querySelector('p');
     const helloButton = document.getElementById('hello');
     const clearButton = document.getElementById('clear');
+    const darwin = document.createElement('h4');
+    const text = document.createElement('h4');
+    darwin.innerHTML = 'Darwin Creme'
+    text.innerHTML = 'Samantha Barrel';
 
+    full.insertAdjacentElement('beforebegin', darwin);
+    full.insertAdjacentElement('beforebegin', text);
     clearButton.addEventListener('click', function(){
         firstname.value = " ";
         lastname.value = " ";
